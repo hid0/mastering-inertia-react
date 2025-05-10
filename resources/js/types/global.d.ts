@@ -1,17 +1,14 @@
-import { PageProps as InertiaPageProps } from '@inertiajs/core';
-import { AxiosInstance } from 'axios';
-import { route as ziggyRoute } from 'ziggy-js';
-import { PageProps as AppPageProps } from './';
+import type { VisitOptions } from "@inertiajs/core"
+import type { AxiosInstance } from "axios"
 
 declare global {
-    interface Window {
-        axios: AxiosInstance;
-    }
-
-    /* eslint-disable no-var */
-    var route: typeof ziggyRoute;
+  interface Window {
+    axios: AxiosInstance
+  }
 }
 
-declare module '@inertiajs/core' {
-    interface PageProps extends InertiaPageProps, AppPageProps {}
+declare module "react-aria-components" {
+  interface RouterConfig {
+    routerOptions: VisitOptions
+  }
 }

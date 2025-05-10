@@ -1,0 +1,9 @@
+{
+  "ui": "resources\\js\\components\\ui",
+  "utils": "resources/js/utils",
+  "gray": "stone",
+  "css": "resources/css/app.css",
+  "alias": "@",
+  "language": "typescript",
+  "$schema": "https://intentui.com/schema.json"
+}
