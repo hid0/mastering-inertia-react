@@ -5,27 +5,16 @@
         "moduleResolution": "bundler",
         "jsx": "react-jsx",
         "strict": true,
-        "skipDefaultLibCheck": true,
-        "skipLibCheck": true,
         "isolatedModules": true,
         "target": "ESNext",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
         "noEmit": true,
         "paths": {
-            "@/*": ["./resources/js/*"]
+            "@/*": ["./resources/js/*"],
+            "ziggy-js": ["./vendor/tightenco/ziggy"]
         }
     },
-    "include": [
-        "resources/js/**/*.ts",
-        "resources/js/**/*.tsx",
-        "resources/js/**/*.d.ts",
-        "resources/js/app.jsx"
-    ],
-    "exclude": [
-        "node_modules",
-        "public",
-        "resources/js/routes/**/*.ts",
-        "resources/js/actions/**/*.tsx"
-    ]
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.tsx", "resources/js/**/*.d.ts"]
 }
